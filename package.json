@@ -1,0 +1,24 @@
+{
+  "name": "skuid-cloud-dns",
+  "version": "1.0.0",
+  "description": "DNS interface to handle multi-cloud functionality.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skuid/skuid-cloud-dns.git"
+  },
+  "author": "Anthony Blardo <anthony@blar.do>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skuid/skuid-cloud-dns/issues"
+  },
+  "homepage": "https://github.com/skuid/skuid-cloud-dns#readme",
+  "dependencies": {
+    "aws-sdk": "^2.92.0",
+    "bluebird": "^3.5.0",
+    "lodash": "^4.17.4"
+  }
+}
