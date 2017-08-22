@@ -4,7 +4,7 @@
   "description": "DNS interface to handle multi-cloud functionality.",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,12 @@
     "aws-sdk": "^2.92.0",
     "bluebird": "^3.5.0",
     "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^4.4.1",
+    "mocha": "^3.5.0",
+    "nock": "^9.0.14"
   }
 }
