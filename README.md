@@ -1,6 +1,7 @@
 Skuid Cloud DNS Adapter
 ----
-Current Status:
+
+[![Build Status](https://overwatch.skuid.ink/api/badges/skuid/skuid-cloud-dns/status.svg)](https://overwatch.skuid.ink/skuid/skuid-cloud-dns)
 
 Public API:
 
