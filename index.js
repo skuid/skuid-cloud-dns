@@ -2,13 +2,13 @@
 
 const AmazonHandler = require("./lib/route53")
 
-const getClient = function(platform, domainName) {
+const getClient = function(opts) {
 	let subclass;
-	switch(platform) {
+	switch(opts.platform) {
 		case "aws":
 			subclass = AmazonHandler;
 	}
-	return new subclass(domainName);
+	return new subclass(opts.domain);
 }
 
 module.exports = {
