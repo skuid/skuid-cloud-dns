@@ -1,0 +1,6 @@
+pipeline:
+  tests:
+    image: node:alpine
+    commands:
+      - npm install
+      - npm test
