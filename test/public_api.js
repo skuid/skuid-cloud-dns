@@ -164,7 +164,7 @@ describe("awsClient Public API", function() {
         "name": "motorworld",
         "type": "CNAME",
         "ttl": 3600,
-        "value": "asdf.amazonaws.com"
+        "values": ["asdf.amazonaws.com"]
       }).then(response => response.ChangeInfo.Id.should.equal("/change/C3BYWILBV9185Z"));
     });
   });
@@ -209,7 +209,7 @@ describe("awsClient Public API", function() {
 
       return awsClient.removeRecord({
         "name": "motorworld",
-        "value": "asdf.amazonaws.com"
+        "values": ["asdf.amazonaws.com"]
       }).then(response => response.ChangeInfo.Id.should.equal("/change/C3BYWILBV9185Z"));
     });
   });
