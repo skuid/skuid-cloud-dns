@@ -73,9 +73,7 @@ describe("awsClient Public API", function() {
           );
     
         return awsClient.isHostnameAvailable("motorworld")
-        .then((response) => {
-          response.should.be.false;
-        })
+        .then(response => response.should.be.false)
       });
 
       it("should pass when the subdomain is in not in use", function() {
@@ -116,9 +114,7 @@ describe("awsClient Public API", function() {
                   );
             
                 return awsClient.isHostnameAvailable("motorworld")
-                .then((response) => {
-                  response.should.be.true;
-                })
+                .then(response => response.should.be.true)
               });
     });
 
