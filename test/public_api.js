@@ -41,9 +41,7 @@ describe("awsClient Public API", function() {
           "encodedQueryParams": true,
         })
           .get("/2013-04-01/hostedzonesbyname")
-          .query({
-            "dnsname": "skuid.eu",
-          })
+          .query(true)
           .reply(200, "<?xml version=\"1.0\"?>\n<ListHostedZonesByNameResponse xmlns=\"https://route53.amazonaws.com/doc/2013-04-01/\"><HostedZones><HostedZone><Id>/hostedzone/Z3M3AYV9KKG4AK</Id><Name>skuid.eu.</Name><CallerReference>RISWorkflow-aa29316118d68e0a0fd3e45f9c71efff</CallerReference><Config><Comment>HostedZone created by Route53 Registrar</Comment><PrivateZone>false</PrivateZone></Config><ResourceRecordSetCount>2</ResourceRecordSetCount></HostedZone></HostedZones><DNSName>skuid.eu</DNSName><IsTruncated>false</IsTruncated><MaxItems>100</MaxItems></ListHostedZonesByNameResponse>", [
             "x-amzn-RequestId",
             "3b5ebad7-de81-11e6-84bc-2589eab727d5",
@@ -60,6 +58,7 @@ describe("awsClient Public API", function() {
           "encodedQueryParams": true,
         })
           .get("/2013-04-01/hostedzone/Z3M3AYV9KKG4AK/rrset")
+          .query(true)
           .reply(200, "<?xml version=\"1.0\"?>\n<ListResourceRecordSetsResponse xmlns=\"https://route53.amazonaws.com/doc/2013-04-01/\"><ResourceRecordSets><ResourceRecordSet><Name>skuid.eu.</Name><Type>NS</Type><TTL>172800</TTL><ResourceRecords><ResourceRecord><Value>ns-1758.awsdns-27.co.uk.</Value></ResourceRecord><ResourceRecord><Value>ns-186.awsdns-23.com.</Value></ResourceRecord><ResourceRecord><Value>ns-1419.awsdns-49.org.</Value></ResourceRecord><ResourceRecord><Value>ns-740.awsdns-28.net.</Value></ResourceRecord></ResourceRecords></ResourceRecordSet><ResourceRecordSet><Name>skuid.eu.</Name><Type>SOA</Type><TTL>900</TTL><ResourceRecords><ResourceRecord><Value>ns-1758.awsdns-27.co.uk. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400</Value></ResourceRecord></ResourceRecords></ResourceRecordSet><ResourceRecordSet><Name>motorworld.skuid.eu.</Name><Type>CNAME</Type><TTL>3600</TTL><ResourceRecords><ResourceRecord><Value>dualstack.load.balancer.address</Value></ResourceRecord></ResourceRecords></ResourceRecordSet></ResourceRecordSets><IsTruncated>false</IsTruncated><MaxItems>100</MaxItems></ListResourceRecordSetsResponse>", [
             "x-amzn-RequestId",
             "3b77c06d-de81-11e6-b9af-373ba96ff5e6",
@@ -82,9 +81,7 @@ describe("awsClient Public API", function() {
                   "encodedQueryParams": true,
                 })
                   .get("/2013-04-01/hostedzonesbyname")
-                  .query({
-                    "dnsname": "skuid.eu",
-                  })
+                  .query(true)
                   .reply(200, "<?xml version=\"1.0\"?>\n<ListHostedZonesByNameResponse xmlns=\"https://route53.amazonaws.com/doc/2013-04-01/\"><HostedZones><HostedZone><Id>/hostedzone/Z3M3AYV9KKG4AK</Id><Name>skuid.eu.</Name><CallerReference>RISWorkflow-aa29316118d68e0a0fd3e45f9c71efff</CallerReference><Config><Comment>HostedZone created by Route53 Registrar</Comment><PrivateZone>false</PrivateZone></Config><ResourceRecordSetCount>2</ResourceRecordSetCount></HostedZone></HostedZones><DNSName>skuid.eu</DNSName><IsTruncated>false</IsTruncated><MaxItems>100</MaxItems></ListHostedZonesByNameResponse>", [
                     "x-amzn-RequestId",
                     "3b5ebad7-de81-11e6-84bc-2589eab727d5",
@@ -101,6 +98,7 @@ describe("awsClient Public API", function() {
                   "encodedQueryParams": true,
                 })
                   .get("/2013-04-01/hostedzone/Z3M3AYV9KKG4AK/rrset")
+                  .query(true)
                   .reply(200, "<?xml version=\"1.0\"?>\n<ListResourceRecordSetsResponse xmlns=\"https://route53.amazonaws.com/doc/2013-04-01/\"><ResourceRecordSets><ResourceRecordSet><Name>skuid.eu.</Name><Type>NS</Type><TTL>172800</TTL><ResourceRecords><ResourceRecord><Value>ns-1758.awsdns-27.co.uk.</Value></ResourceRecord><ResourceRecord><Value>ns-186.awsdns-23.com.</Value></ResourceRecord><ResourceRecord><Value>ns-1419.awsdns-49.org.</Value></ResourceRecord><ResourceRecord><Value>ns-740.awsdns-28.net.</Value></ResourceRecord></ResourceRecords></ResourceRecordSet><ResourceRecordSet><Name>skuid.eu.</Name><Type>SOA</Type><TTL>900</TTL><ResourceRecords><ResourceRecord><Value>ns-1758.awsdns-27.co.uk. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400</Value></ResourceRecord></ResourceRecords></ResourceRecordSet></ResourceRecordSets><IsTruncated>false</IsTruncated><MaxItems>100</MaxItems></ListResourceRecordSetsResponse>", [
                     "x-amzn-RequestId",
                     "3b77c06d-de81-11e6-b9af-373ba96ff5e6",
