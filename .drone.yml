@@ -2,5 +2,6 @@ pipeline:
   tests:
     image: node:alpine
     commands:
+      - npm version
       - npm install
       - npm test
