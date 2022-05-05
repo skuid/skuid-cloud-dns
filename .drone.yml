@@ -1,6 +1,6 @@
 pipeline:
   tests:
-    image: node:alpine
+    image: quay.io/skuid/node-base:14.19-alpine
     commands:
       - npm version
       - npm install
