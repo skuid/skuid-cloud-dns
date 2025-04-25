@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars, no-undef */ // Eslint not playing nicely with "describe", "should", other test functions, ignore for now.
 "use strict";
 
 const Path = require("path");
