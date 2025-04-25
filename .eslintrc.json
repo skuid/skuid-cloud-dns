@@ -1,0 +1,75 @@
+{
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": "2020",
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "spread": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "rules": {
+        "array-bracket-newline": ["error", {
+            "multiline": true,
+            "minItems": 1
+        }],
+        "array-bracket-spacing": ["error", "never"],
+        "array-element-newline": ["error", "always"],
+        "brace-style": ["error", "1tbs", { "allowSingleLine": false }],
+        "comma-dangle": ["error", "always-multiline"],
+        "comma-spacing": "error",
+        "curly": ["error", "all"],
+        "indent": [
+            "error",
+            "tab",
+            { "SwitchCase": 1 }
+        ],
+        "key-spacing": "error",
+        "keyword-spacing": ["error", {
+            "before": true,
+            "after": true
+        }],
+        "no-console": [
+            "error"
+        ],
+        "no-eval": [
+            "error"    
+        ], 
+        "no-new-func": [
+            "error"
+        ],
+        "no-prototype-builtins": "off",
+        "no-trailing-spaces": "error",
+        "no-unexpected-multiline": "error",
+        "no-useless-escape": 0,
+        "object-curly-newline": ["error", {
+            "ObjectExpression": {
+                "minProperties": 1,
+                "multiline": true
+            },
+            "ObjectPattern": "always"
+        }],
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "object-property-newline": "error",
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "space-before-blocks": "error",
+        "no-return-await": 2
+    },
+    "plugins": [
+        "json"
+    ]
+}
